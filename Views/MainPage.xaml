@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RandomStudentSelectorArturW.Views.MainPage"
+             Title="Selektor Uczniow">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/AppStyles.css" />
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Padding="15" Spacing="10">
+        <Label Text="Zarządzaj Klasami"
+               StyleClass="mainHeader"/>
+
+        <Button Text="Dodaj nową klasę"
+                Clicked="OnAddClassClicked"
+                StyleClass="primaryButton"/>
+
+        <Label Text="Twoje klasy:"
+               StyleClass="sectionLabel"/>
+
+        <CollectionView x:Name="ClassesCollection"
+                        HeightRequest="200">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout Spacing="0">
+                        <Grid Padding="10"
+                              Margin="0,0"
+                              ColumnDefinitions="*,Auto,Auto"
+                              BackgroundColor="#F5F5F5">
+
+                            <Label Text="{Binding .}"
+                                   StyleClass="classItemText"
+                                   Grid.Column="0"
+                                   Padding="8"
+                                   FontSize="20"/>
+
+                            <Button Text="✏️"
+                                    Grid.Column="1"
+                                    Clicked="OnEditClassClicked"
+                                    BackgroundColor="#2196F3"
+                                    TextColor="White"
+                                    Padding="8"
+                                    FontSize="16"
+                                    CornerRadius="5"
+                                    Margin="5,0"/>
+
+                            <Button Text="🗑️"
+                                    Grid.Column="2"
+                                    Clicked="OnDeleteClassClicked"
+                                    BackgroundColor="#F44336"
+                                    TextColor="White"
+                                    Padding="8"
+                                    FontSize="16"
+                                    CornerRadius="5"/>
+                        </Grid>
+                        <BoxView Opacity="0"
+                                 HeightRequest="1"
+                                 Margin="0,5"/>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label x:Name="EmptyClassesLabel"
+               Text="Brak klas. Kliknij przycisk powyżej aby dodać nową klasę!"
+               StyleClass="emptyMessage"/>
+
+        <BoxView StyleClass="separator"/>
+
+        <Picker x:Name="ClassPicker"
+                Title="Wybierz klasę:"
+                SelectedIndexChanged="OnClassChanged"
+                StyleClass="picker"/>
+
+        <Button Text="Edytuj Uczniów"
+                Clicked="OnEditStudentsClicked"
+                StyleClass="drawButton"/>
+
+        <Button Text="Losuj Ucznia"
+                Clicked="OnDrawClicked"
+                StyleClass="drawButton"/>
+
+        <Label x:Name="ResultLabel"
+               Text="Wybierz klasę aby rozpocząć"
+               StyleClass="resultLabel"/>
+    </VerticalStackLayout>
+</ContentPage>

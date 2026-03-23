@@ -1,0 +1,187 @@
+* {
+    -maui-shell-title: #4CAF50;
+    -maui-shell-background: #4C7F50;
+}
+
+.pageTitle {
+    font-size: 28;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.mainHeader {
+    font-size: 28;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0 0 15 0;
+}
+
+.sectionLabel {
+    font-size: 16;
+    font-weight: bold;
+    margin: 10 0 5 0;
+}
+
+.primaryButton {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 10;
+    border-radius: 10;
+    font-size: 16;
+}
+
+.addButton {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8;
+    font-size: 18;
+    padding: 15;
+}
+
+.drawButton {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8;
+    font-size: 16;
+    padding: 12;
+    margin: 8 0 0 0;
+}
+
+.editButton {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 8;
+    font-size: 14;
+}
+
+.deleteButton {
+    background-color: #F44336;
+    color: white;
+    border-radius: 8;
+    font-size: 14;
+}
+
+.classNameHeader {
+    background-color: #512BD4;
+    padding: 10;
+}
+
+.classNameLabel {
+    font-size: 20;
+    font-weight: bold;
+    color: black;
+}
+
+.editClassButton {
+    background-color: transparent;
+    color: white;
+    font-size: 18;
+    padding: 10;
+}
+
+.textEntry {
+    background-color: white;
+    color: black;
+    border-radius: 8;
+    padding: 8;
+}
+
+.entryPlaceholder {
+    color: #999;
+}
+
+.picker {
+    font-size: 16;
+    padding: 10;
+}
+
+.pickerTitle {
+    color: #512BD4;
+}
+
+.resultLabel {
+    color: #FF5722;
+    font-weight: bold;
+    font-size: 22;
+    text-align: center;
+    margin: 10 0 0 0;
+}
+
+.emptyMessage {
+    color: #999;
+    text-align: center;
+    font-size: 14;
+    margin: 20;
+}
+
+.classItem {
+    background-color: #F5F5F5;
+    padding: 15;
+    margin: 5 0;
+    border-radius: 8;
+}
+
+.classItemText {
+    font-size: 18;
+    font-weight: bold;
+    color: #333;
+}
+
+.classItemArrow {
+    font-size: 20;
+    color: #333;
+}
+
+.classItemContainer {
+    background-color: #F5F5F5;
+    padding: 15;
+    margin: 5 0;
+    border-radius: 8;
+}
+
+.separator {
+    height: 1;
+    background-color: #DDD;
+    margin: 15 0;
+}
+
+.studentItem {
+    background-color: #F5F5F5;
+    padding: 15;
+    margin: 5 0;
+    border-radius: 8;
+}
+
+.studentItemText {
+    font-size: 18;
+    color: #333;
+}
+
+.label {
+    color: #333;
+}
+
+.labelGray {
+    color: #999;
+    font-size: 14;
+}
+
+.labelBold {
+    font-weight: bold;
+    color: #333;
+}
+
+.headerLabel {
+    font-size: 24;
+    color: white;
+    text-align: center;
+}
+
+.luckyLabel {
+    color: #2196F3;
+    font-size: 18;
+    text-align: center;
+}
