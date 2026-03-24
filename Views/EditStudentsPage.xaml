@@ -53,7 +53,7 @@
                               ColumnDefinitions="*,Auto,Auto"
                               BackgroundColor="#F5F5F5"
                               Margin="0,5">
-                            <Label Text="{Binding ., StringFormat='{0}'}"
+                            <Label Text="{Binding .}"
                                    StyleClass="studentItemText"
                                    Grid.Column="0"
                                    Padding="8"
